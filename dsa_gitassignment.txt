@@ -41,7 +41,6 @@ int main()
 }
 
 Q3. program of structure
-
 #include<iostream>
 #include<string>
 using namespace std;
@@ -59,10 +58,13 @@ struct Book b[5];
 int j;    
 for(j=0;j<2;j++)
 {
-cout<<"enter enter no of pages:"<<endl;
-cin>>b[j].pageNo;
 cout<<"enter book name:"<<endl;
-cin>>b[j].name;
+getline(cin,b[j].name);
+//cin>>b[j].name;
+
+cout<<"enter no of pages:"<<endl;
+cin>>b[j].pageNo;
+
 cout<<"enter book rank:"<<endl;
 cin>>b[j].ranking;
 }
