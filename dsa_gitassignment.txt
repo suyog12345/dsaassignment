@@ -1,3 +1,5 @@
+Q1.program of array to enter subjects of your current semester.
+
 #include<iostream>
 using namespace std;
 
@@ -17,8 +19,8 @@ const char  *sub[7]={"discerte maths","cloud computing","DSA","php","data commun
     return 0;
 
 }
-
-Q2.
+ 
+Q2.array to print element in reverse
 #include<iostream>
 using namespace std;
 int main()
@@ -36,4 +38,39 @@ int main()
         cout<<arr[i]<<endl;
     }
     return 0;
+}
+
+Q3. program of structure
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+struct Book
+{
+int pageNo;
+string name;
+int ranking;
+};
+
+int main()
+{
+struct Book b[5];
+int j;    
+for(j=0;j<2;j++)
+{
+cout<<"enter enter no of pages:"<<endl;
+cin>>b[j].pageNo;
+cout<<"enter book name:"<<endl;
+cin>>b[j].name;
+cout<<"enter book rank:"<<endl;
+cin>>b[j].ranking;
+}
+for(j=0;j<2;j++)
+{
+cout<<"book name:"<<b[j].name<<endl;
+cout<<"no of pages:"<<b[j].pageNo<<endl;
+cout<<"book rank:"<<b[j].ranking<<endl;
+}
+return 0;
 }
